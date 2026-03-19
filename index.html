@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    This is Rygg's site
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gratitude Journal</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/gratitudelogo.png" alt="Gratitude Journal Logo">
+            <button class="stretch" type="login">Login</button>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="prompts.html">Prompts</a></li>
+                <li><a href="archive.html">Archive</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <h1>What are you grateful for today</h1>
+        <button class="stretch" type="write">Start Writing</button>
+
+        <h3>Today's gratitude entry</h3>
+        <textarea id="entry" name="entry" rows="5" cols="25" required></textarea>
+        <button class="stretch" type="save">Save Entry</button>
+
+        <h3>Daily prompts</h3>
+
+        <h3>Past Entries</h3>
+
+
+        <footer>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy</a>
+        </footer>
+    </body>
 </html>
