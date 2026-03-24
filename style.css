@@ -54,9 +54,16 @@ nav ul {
 
 footer {
     border-top: 5px solid #f5b5ab;
+    
+}
+
+#footerwrapper {
+    padding: 0px 200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
+    width: 300px;
+    margin: auto;
 }
 
 footer a {
