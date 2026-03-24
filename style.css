@@ -6,14 +6,20 @@
 header{
     border-bottom: 5px solid #f5b5ab;
     background-color: #fef8f4;
+    height: 100px;
 }
 
 #logo {
-    width: 10%;
+    width: 200px;
     margin: 0;
     padding: 0;
+    float: left;
 }
 
+body {
+    place-items: center;
+    text-align: center;
+}
 
 #login {
     color: #90c4ba;
@@ -23,7 +29,7 @@ header{
     background-color: #a5be8a;
     border: 2px solid #a5be8a;
     text-decoration: none;
-    margin: 30px 40px;
+    margin: 20px 20px;
     float: right;
 }
 
@@ -32,6 +38,7 @@ nav {
     border-bottom: 5px solid #f5b5ab;
     font-size: 20px;
     padding: 5px 0px;
+    margin: auto;
 }
 
 nav a {
@@ -50,6 +57,15 @@ nav ul {
     margin: 0;
     padding: 0;
     place-items: center;
+}
+
+#journalbt {
+    text-decoration: none;
+    border: solid 1px #f5b5ab;
+    border-radius: 3px;
+    padding: 5px;
+    color: #f7d785;
+    background: #90c4ba;
 }
 
 footer {
