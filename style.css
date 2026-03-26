@@ -19,6 +19,8 @@ header{
 body {
     place-items: center;
     text-align: center;
+    background: url(images/clouldbackground.png);
+    background-size: 100%;
 }
 
 #login {
@@ -47,23 +49,34 @@ nav a {
     text-decoration: none;
 }
 
-nav li {
-    list-style-type: none;
-}
-
 nav ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin: 0;
+    width: 600px;
+    margin: auto;
     padding: 0;
     place-items: center;
+
+}
+nav ul li {
+    list-style-type: none;
+}
+
+#journalsec {
+    border-bottom: 5px solid #f5b5ab;
+    height: 150px;
+}
+
+#journalsec h1 {
+    font-family: "Playfair Display", serif;
+    margin: 50px 10px;
 }
 
 #journalbt {
     text-decoration: none;
     border: solid 1px #f5b5ab;
     border-radius: 3px;
-    padding: 5px;
+    padding: 10px 5px;
     color: #f7d785;
     background: #90c4ba;
 }
