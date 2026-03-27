@@ -8,8 +8,157 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    </head>
+    <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+
+
+.hero {
+    text-align: center;
+    margin: 42px auto 34px;
+    padding: 44px 28px;
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 28px;
+    box-shadow: 0 12px 30px rgba(165, 140, 125, 0.12);
+    backdrop-filter: blur(4px);}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    color: #8d736d;
+    margin-bottom: 12px;}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #7b746d;}
+
+.prompt-section {
+    margin-top: 20px;}
+
+.section-title {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: #8d736d;
+    margin-bottom: 10px;}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 28px;
+    color: #8d847b;
+    font-size: 1rem;}
+
+.prompt-grid {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.prompt-card {
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 22px;
+    padding: 24px;
+    box-shadow: 0 10px 24px rgba(154, 132, 122, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    transition: 0.25s ease;}
+
+.prompt-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(154, 132, 122, 0.14);}
+
+.prompt-number {
+    display: inline-block;
+    background-color: #ffd9df;
+    color: #8c6d73;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 7px 12px;
+    border-radius: 999px;
+    margin-bottom: 14px;}
+
+.prompt-card p {
+    line-height: 1.8;
+    color: #6e665f;
+    font-size: 1rem;}
+
+.quote-box {
+    margin-top: 36px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.72), rgba(255,244,246,0.72));
+    padding: 30px 26px;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 10px 24px rgba(154, 132, 122, 0.10);}
+
+.quote-box h2 {
+    font-family: "Playfair Display", serif;
+    color: #8d736d;
+    margin-bottom: 12px;
+    font-size: 1.8rem;}
+
+.quote-box p {
+    font-size: 1.05rem;
+    color: #7a746d;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;}
+
+footer {
+    border-top: 5px solid #f5b5ab;
+    background-color: #90c4ba;
+}
+
+#footerwrapper {
+    padding: 0px 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    width: 300px;
+    margin: auto;
+}
+
+footer a {
+    color: #f7d785;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {font-size: 2.2rem;}
+
+nav ul {
+    gap: 8px;}
+
+nav a {
+    padding: 8px 12px;
+    font-size: 0.95rem;}
+
+.logo {
+    width: 180px;}}
+
+@media (max-width: 500px){
+.hero {
+    padding: 30px 18px;}
+
+.hero h1 {
+    font-size: 1.9rem;}
+
+.prompt-card {
+    padding: 20px 16px;}
+
+footer a {
+    display: inline-block;
+    margin: 6px 10px;}
+} 
+</style>
+</head>
     <body>
+        <body>
         <header>
             <img id="logo" src="images/gratitudelogo.png" alt="Gratitude Journal Logo">
             <a id="login" href="login.html">Login</a>
@@ -23,13 +172,62 @@
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-
-        <footer>
+        <main>
+            <section class="hero">
+                <h1>Gratitude Prompts</h1>
+                <p>
+                    Some days gratitude comes easily, and other days it takes a little more thought. These prompts are here to help you slow down, reflect, and notice the beauty in your life, even in small and simple things.</p>
+                </section>
+                <section class="prompt-section">
+                    <h2 class="section-title">Today's Gentle Reminders</h2>
+                    <p class="section-subtitle">Use these prompts whenever you need a little inspiration.</p>
+                    <div class="prompt-grid">
+                        <div class="prompt-card">
+                            <span class="prompt-number">Prompt 01</span>
+                            <p>What is one small moment from today that made you smile?</p>
+                        </div>
+                        <div class="prompt-card">
+                            <span class="prompt-number">Prompt 02</span>
+                            <p>Who is someone in your life you are thankful for, and why?</p>
+                        </div>
+                        <div class="prompt-card">
+                            <span class="prompt-number">Prompt 03</span>
+                            <p>What is something about your current season of life that you appreciate?</p>
+                        </div>
+                        <div class="prompt-card">
+                            <span class="prompt-number">Prompt 04</span>
+                            <p>What is one challenge that taught you something meaningful?</p>
+                        </div>
+                        <div class="prompt-card">
+                            <span class="prompt-number">Prompt 05</span>
+                            <p>What is something beautiful you saw recently?</p>
+                        </div>
+                        <div class="prompt-card">
+                            <span class="prompt-number">Prompt 06</span>
+                            <p>What is one thing your body allowed you to do today that you are grateful for?</p>
+                        </div>
+                        <div class="prompt-card">
+                            <span class="prompt-number">Prompt 07</span>
+                            <p>What is one memory you return to often because it brings you peace or joy?</p>
+                        </div>
+                        <div class="prompt-card">
+                            <span class="prompt-number">Prompt 08</span>
+                            <p>What is something in your everyday routine that quietly makes your life better?</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="quote-box">
+                    <h2>Pause and Notice</h2>
+                    <p>Gratitude does not always have to be big. Sometimes it is just warm light, a kind text, a calm moment, a good laugh, or simply making it through the day.</p>
+                </section>
+            </main>
+            <footer>
             <div id="footerwrapper">
                 <a href="about.html">About</a>
                 <a href="#">Contact</a>
                 <a href="#">Privacy</a>
             </div>
         </footer>
-    </body>
+    </div>
+</body>
 </html>
