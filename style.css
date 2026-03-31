@@ -49,6 +49,7 @@ nav a {
     text-decoration: none;
 }
 
+
 nav ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -56,10 +57,19 @@ nav ul {
     margin: auto;
     padding: 0;
     place-items: center;
-
+    
 }
 nav ul li {
     list-style-type: none;
+    border-right: 1px solid #f7d785;
+    padding-right: 30px;
+}
+
+nav ul li:hover {
+    background: #a5be8a;
+}
+nav ul li:last-child {
+    border-right: none  ;
 }
 
 #journalsec {
@@ -81,9 +91,46 @@ nav ul li {
     background: #90c4ba;
 }
 
+#dailypromts {
+    border-bottom: 5px solid #f5b5ab;
+}
+
+#pastentries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    padding: 20px 100px
+}
+
+#pastentries h3 {
+    grid-column: 1/4;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+}
+
+.decard {
+    width: 300px;
+    height: 100px;
+    border: 3px solid #f5b5ab;
+    border-radius: 5px;
+    padding: 5px;
+    place-items: center;
+    margin: auto;
+    background: #a5be8a;
+}
+
+.decard p {
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    color: #f7d785;
+}
+
 footer {
     border-top: 5px solid #f5b5ab;
     background-color: #90c4ba;
+    place-items: center;
+    padding: 5px 0px;
+    margin: auto;
 }
 
 #footerwrapper {
@@ -98,6 +145,12 @@ footer {
 footer a {
     color: #f7d785;
     text-decoration: none;
+    border-right: 1px solid #f7d785;
+    padding-right: 25px;
+}
+
+footer a:last-child {
+    border-right: none;
 }
 
 
