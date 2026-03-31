@@ -62,7 +62,7 @@ nav ul {
 nav ul li {
     list-style-type: none;
     border-right: 1px solid #f7d785;
-    padding-right: 30px;
+    padding: 0px 30px;
 }
 
 nav ul li:hover {
@@ -91,8 +91,47 @@ nav ul li:last-child {
     background: #90c4ba;
 }
 
+#journaling {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+}
+
 #dailypromts {
     border-bottom: 5px solid #f5b5ab;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    padding: 20px 100px
+}
+
+#dailypromts h3 {
+    grid-column: 1/4;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+}
+
+.dpcard {
+    display: grid;
+    width: 300px;
+    height: 100px;
+    border: 3px solid #f5b5ab;
+    border-radius: 5px;
+    padding: 5px;
+    place-items: center;
+    margin: auto;
+    background: #90c4ba;
+}
+
+.dpcard p {
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    color: #f7d785;
+}
+
+.dpcard a {
+    display: flex;
+    text-decoration: none;
+    color: #f7d785;
 }
 
 #pastentries {
@@ -109,6 +148,7 @@ nav ul li:last-child {
 }
 
 .decard {
+    display: grid;
     width: 300px;
     height: 100px;
     border: 3px solid #f5b5ab;
@@ -117,6 +157,12 @@ nav ul li:last-child {
     place-items: center;
     margin: auto;
     background: #a5be8a;
+}
+
+.decard h4 {
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    color: #f7d785;
 }
 
 .decard p {
