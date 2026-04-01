@@ -254,12 +254,16 @@ footer a:last-child {
     width: 40%;
     padding: 10px;
     margin-bottom: 10px;
+
+    background-color: #faf5f5;
 }
 
 #about_box p {
     overflow-wrap: break-word;
     padding: 10px;
     font-size: large;
+    color: #f7d785;
+    text-shadow: 1px 1px 1px black;
 }
 
-/*End of About Page*/
+/*End of About Page    #d1b773  */
