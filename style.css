@@ -368,14 +368,13 @@ footer a:last-child {
 }
 
 #about_box {
-    outline: 4px solid #90c4ba;
     border: 4px solid #f5b5ab;
     border-radius: 10px;
     width: 40%;
     padding: 10px;
     margin-bottom: 10px;
 
-    background-color: #faf5f5;
+    background-color: #90c4ba;
 }
 
 #about_box p {
@@ -383,7 +382,6 @@ footer a:last-child {
     padding: 10px;
     font-size: large;
     color: #f7d785;
-    text-shadow: 1px 1px 1px black;
 }
 
 /*End of About Page    #d1b773  */
