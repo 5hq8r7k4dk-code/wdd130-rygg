@@ -391,31 +391,33 @@ footer a:last-child {
 /* For moble devices */
 
 @media (max-width: 768px) {
-    nav ul {
-        gap: 8px;
-    }
 
-    nav a {
-        padding: 8px 12px;
-        font-size: 0.95rem;
-    }
 
-    .logo {
-        width: 180px;
-    }
+    #dailypromts {
+        width: auto;
+        display: block;
 
-    footer a {
-    display: inline-block;
-    margin: 6px 10px;
-    }   
+    }
+    .dpcard {
+        width: 50%;
+        margin-top: 10px;
+        height: auto;
+    }
 
     #pastentries {
-        width: 100%;
-        grid-template-columns: 1fr;
+        width: auto;
+        display: block;
     }
 
     .decard {
         width: 50%;
+        margin-top: 10px;
         height: auto;
     }
+
+    #archive {
+        width: auto;
+        display: block;
+    }
+
 }
